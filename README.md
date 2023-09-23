@@ -1,6 +1,6 @@
-# Marvel's Comic Search
+# Marvel Comics
 
-## Comic Search app using Marvel's API
+## Comic app using Marvel's API
 
 <p align="center">
  <a href="#features">Features</a> •
@@ -26,7 +26,7 @@
   <img alt="Marvel's Comic Search" title="#MarvelsComicSearch" src="./src/assets/images/marvel_preview.jpeg" />
 </h1>
 
-You can see the app in production [here](https://leandronunesdev.github.io/marvel/)
+You can see the app in production [here](Falta url )
 
 <h1 id="requirements">Requirements</h1>
 
@@ -38,7 +38,7 @@ Besides that, is good to have a good code editor as [VSCode](https://code.visual
 
 ```bash
 # Clone this repository
-$ git clone <https://github.com/leandronunesdev/marvel>
+$ git clone <https://github.com/PedroFedeCasillas/my-marvel-comics>
 
 # Access the project folder using terminal/cmd
 $ cd marvel
@@ -66,15 +66,13 @@ The following tools were used on this project:
 <h1 id="author">🛠 Author</h1>
 
 <a href="https://github.com/leandronunesdev">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/60386045?s=460&u=b81d71f87ddbf5a2da61abf86227ede788de7d32&v=4" width="100px;" alt=""/>
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/74103741?s=400&v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Leandro Nunes</b></sub></a> <a href="https://github.com/leandronunesdev" title="Leandro">🚀</a>
+ <sub><b>Pedro federido Casillas</b></sub></a> <a href="https://github.com/PedroFedeCasillas" title="Pedro Fede">🚀</a>
 
-Made with ❤️ by Leandro Nunes
+Made with ❤️ by Pedro Fede Casillas
 
 👋🏽 Reach out!
 
-<a href="https://leandronunes.dev/">Website<a> |
-<a href="https://www.linkedin.com/in/nunesprofissional/">Linkedin<a> |
-<a href="mailto:https://www.linkedin.com/in/nunesprofissional/">E-mail<a> |
-<a href="https://twitter.com/leandro_nunes">Twitter<a>
+<a href="https://pedrofedecasillas-website.netlify.app/">Website<a> |
+<a href="https://www.linkedin.com/in/pedro-fede-casillas-dev/">Linkedin<a> 

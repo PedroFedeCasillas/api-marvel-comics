@@ -15,7 +15,12 @@ export const CustomPagination = ({
 }: PaginationProps) => {
   return (
     <S.PaginationWrapper>
-      <Pagination count={count} onChange={onChange} page={page} />
+      <Pagination 
+        count={count} 
+        onChange={onChange} 
+        page={page} 
+        style={{ backgroundColor: 'silver', borderRadius: '4px'}}
+      />
     </S.PaginationWrapper>
   );
 };

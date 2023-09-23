@@ -28,6 +28,7 @@ export const Wrapper = styled.div`
       margin-bottom: 2vh;
       cursor: pointer;
       margin-top: 7vh;
+      border-radius: 5px;
     }
 
     p {
@@ -36,20 +37,12 @@ export const Wrapper = styled.div`
       font-weight: ${theme.font.bold};
       letter-spacing: 1.2px;
       cursor: pointer;
+      color: ${theme.colors.white};
       &:hover {
-        color: ${theme.colors.lightRed};
+        color: ${theme.colors.grey};
       }
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-      font-size: 11px;
-
-      &:hover {
-        color: ${theme.colors.lightRed};
-      }
-    }
   `}
 `;
 

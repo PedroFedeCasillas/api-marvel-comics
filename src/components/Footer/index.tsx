@@ -16,11 +16,11 @@ export const Footer = () => {
           <p>
             Made with <img src={Heart} alt='love' /> using React by{' '}
             <a
-              href='https://github.com/leandronunesdev'
+              href='https://github.com/PedroFedeCasillas/my-marvel-comics'
               target='_blank'
               rel='noreferrer'
             >
-              Leandro Nunes
+              Pedro Fede Casillas
             </a>
           </p>
         </S.Wrapper>

@@ -23,7 +23,7 @@
 <h1 id="demo">App Preview</h1>
 
 <h1 align="center">
-  <img alt="Marvel's Comic Search" title="#MarvelsComicSearch" src="./src/assets/images/marvel_preview.jpeg" />
+  <img alt="My Marvel Comics" title="#MarvelsComicSearch" src="./src/assets/images/page-img.jpeg" />
 </h1>
 
 You can see the app in production [here](Falta url )

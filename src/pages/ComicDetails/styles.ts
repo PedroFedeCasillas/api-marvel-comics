@@ -2,21 +2,14 @@ import styled, { css } from 'styled-components';
 
 export const ComicDetailsWrapper = styled.div`
   ${({ theme }) => css`
+    background-color: #1f2a40;
     display: flex;
     max-width: 1240px;
     padding: 20px;
     margin: 60px auto 0;
     min-height: 100vh;
+    color: ${theme.colors.white};
 
-    a {
-      color: inherit;
-      margin-top: 20px;
-      display: block;
-
-      &:hover {
-        color: ${theme.colors.lightRed};
-      }
-    }
   `}
 `;
 
@@ -29,6 +22,7 @@ export const ComicDetails = styled.div`
 
     img {
       max-width: 350px;
+      border-radius: 10px;
     }
 
     h1,

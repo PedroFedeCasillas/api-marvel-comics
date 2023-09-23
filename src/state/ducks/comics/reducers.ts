@@ -17,7 +17,7 @@ const initialState: ComicsState = {
   favorites: [],
   offset: 0,
   pages: 1,
-  attribution: 'Data provided by Marvel. © 2022 MARVEL',
+  attribution: 'Data provided by Marvel. © 2023 MARVEL',
   isFetching: false,
   error: undefined,
 };

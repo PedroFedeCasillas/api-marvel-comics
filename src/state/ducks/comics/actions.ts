@@ -4,10 +4,10 @@ import { ComicType } from '../../../constants/genericTypes';
 
 const COMICS_URL = 'https://gateway.marvel.com/v1/public/comics';
 
-const ts = '1660759425';
-const apikey = '1da8adb9d8fdb7ffb3cc16b00643ae7c';
-const hash = '74cd6b9fa89759bb0f008095503f3212';
-const dateRange = '2020-01-01,2022-01-01';
+const ts = '1';
+const apikey = '7e994420fae9b225d26c4e9a0f45223f';
+const hash = '1d5cbf8f83e384a959f2efdb610fed3c';
+const dateRange = '2020-01-01,2023-09-01';
 
 const getComics = createAsyncThunk(
   'comics/getComics',

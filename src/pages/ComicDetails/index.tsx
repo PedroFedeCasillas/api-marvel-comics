@@ -104,9 +104,6 @@ export const ComicDetails = () => {
                     <p>{comic.description}</p>
                   </>
                 )}
-                <a href={comic.urls[0].url} target='_blank' rel='noreferrer'>
-                  Check on Marvel's website
-                </a>
               </div>
             </S.ComicDetails>
           )}

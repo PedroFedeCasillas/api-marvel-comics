@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     body {
+        background-color: #141b2d;
         font-family: 'Roboto', sans-serif;
     }
     * {        

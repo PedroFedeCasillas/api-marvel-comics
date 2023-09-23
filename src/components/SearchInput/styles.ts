@@ -11,6 +11,7 @@ export const StyledInput = styled.input`
     height: 50px;
     width: 100%;
     padding-left: 24px;
+    border-radius: 8px;
     font-size: 16px;
     outline: none;
     font-family: ${theme.font.robotoCondensed};

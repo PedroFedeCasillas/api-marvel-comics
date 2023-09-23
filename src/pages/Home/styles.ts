@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const ComicsWrapper = styled.div`
+  background-color: #1f2a40;
   display: flex;
   flex-direction: column;
   max-width: 1240px;

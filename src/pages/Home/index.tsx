@@ -53,7 +53,7 @@ export const Home = () => {
   return (
     <S.ComicsWrapper>
       <Helmet>
-        <title>Home | Comic Search</title>
+        <title>Home | My Marvel Comics</title>
       </Helmet>
       {isFetching ? (
         <Loading />

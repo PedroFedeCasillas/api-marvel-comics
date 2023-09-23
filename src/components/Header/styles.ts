@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
     height: 70px;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 40%);
     align-items: center;
-    background-color: ${theme.colors.black};
+    background-color: ${theme.colors.blue};
     position: fixed;
     top: 0;
     width: 100%;

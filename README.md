@@ -26,7 +26,7 @@
   <img alt="My Marvel Comics" title="#MarvelsComicSearch" src="./src/assets/images/page-img.jpeg" />
 </h1>
 
-You can see the app in production [here](Falta url )
+You can see the app in production [here](https://pn2611xt-3000.brs.devtunnels.ms/)
 
 <h1 id="requirements">Requirements</h1>
 
@@ -38,7 +38,7 @@ Besides that, is good to have a good code editor as [VSCode](https://code.visual
 
 ```bash
 # Clone this repository
-$ git clone <https://github.com/PedroFedeCasillas/my-marvel-comics>
+$ git clone <https://github.com/PedroFedeCasillas/api-marvel-comics>
 
 # Access the project folder using terminal/cmd
 $ cd marvel
@@ -65,7 +65,7 @@ The following tools were used on this project:
 
 <h1 id="author">🛠 Author</h1>
 
-<a href="https://github.com/leandronunesdev">
+<a href="https://github.com/PedroFedeCasillas/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/74103741?s=400&v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Pedro federido Casillas</b></sub></a> <a href="https://github.com/PedroFedeCasillas" title="Pedro Fede">🚀</a>

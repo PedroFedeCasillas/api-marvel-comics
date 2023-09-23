@@ -16,7 +16,7 @@ export const Footer = () => {
           <p>
             Made with <img src={Heart} alt='love' /> using React by{' '}
             <a
-              href='https://github.com/PedroFedeCasillas/my-marvel-comics'
+              href='https://github.com/PedroFedeCasillas/api-marvel-comics'
               target='_blank'
               rel='noreferrer'
             >

@@ -23,7 +23,7 @@
 <h1 id="demo">App Preview</h1>
 
 <h1 align="center">
-  <img alt="My Marvel Comics" title="#MarvelsComicSearch" src="./src/assets/images/page-img.jpeg" />
+  <img alt="api-marvel-comics" title="#ApiMarvelComics" src="./src/assets/images/page-img.jpeg" />
 </h1>
 
 You can see the app in production [here](https://pn2611xt-3000.brs.devtunnels.ms/)
@@ -41,7 +41,7 @@ Besides that, is good to have a good code editor as [VSCode](https://code.visual
 $ git clone <https://github.com/PedroFedeCasillas/api-marvel-comics>
 
 # Access the project folder using terminal/cmd
-$ cd marvel
+$ cd api-marvel-comics
 
 # Install the dependencies
 $ npm install

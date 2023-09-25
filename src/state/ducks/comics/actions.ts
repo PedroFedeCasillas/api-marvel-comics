@@ -2,19 +2,19 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { ComicType } from '../../../constants/genericTypes';
 
-const COMICS_URL = 'https://gateway.marvel.com:443/v1/public/comics';
+const API_URL = process.env.REACT_APP_API_URL;
 
-const ts = '1';
-const apikey = '7e994420fae9b225d26c4e9a0f45223f';
-const hash = '1d5cbf8f83e384a959f2efdb610fed3c';
-const dateRange = '2020-01-01,2023-09-01';
+const ts = process.env.REACT_APP_TS;
+const apikey = process.env.REACT_APP_APIKEY;
+const hash = process.env.REACT_APP_HASH;
+const dateRange = process.env.REACT_APP_DATE_RANGE;
 
 const getComics = createAsyncThunk(
   'comics/getComics',
   async (offset: number, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
-        `${COMICS_URL}?ts=${ts}&apikey=${apikey}&hash=${hash}&dateRange=${dateRange}&offset=${offset}`
+        `${API_URL}?ts=${ts}&apikey=${apikey}&hash=${hash}&dateRange=${dateRange}&offset=${offset}`
       );
       return { data };
     } catch (err: any) {
@@ -31,7 +31,7 @@ const getComicDetails = createAsyncThunk(
   async (id: string, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
-        `${COMICS_URL}/${id}?ts=${ts}&apikey=${apikey}&hash=${hash}`
+        `${API_URL}/${id}?ts=${ts}&apikey=${apikey}&hash=${hash}`
       );
       return { data };
     } catch (err: any) {
@@ -49,7 +49,7 @@ const searchComics = createAsyncThunk(
     const { search, offset } = params;
     try {
       const { data } = await axios.get(
-        `${COMICS_URL}?ts=${ts}&apikey=${apikey}&hash=${hash}&titleStartsWith=${search}&offset=${offset}`
+        `${API_URL}?ts=${ts}&apikey=${apikey}&hash=${hash}&titleStartsWith=${search}&offset=${offset}`
       );
       return { data };
     } catch (err: any) {
@@ -66,7 +66,7 @@ const getAutocompleteOptions = createAsyncThunk(
   async (search: string, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
-        `${COMICS_URL}?ts=${ts}&apikey=${apikey}&hash=${hash}&titleStartsWith=${search}`
+        `${API_URL}?ts=${ts}&apikey=${apikey}&hash=${hash}&titleStartsWith=${search}`
       );
       return { data };
     } catch (err: any) {

@@ -1,21 +1,20 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { ComicType } from '../../../constants/genericTypes';
-console.log(process.env.API_URL);
 
-const API_URL = process.env.API_URL;
+const COMICS_URL = 'https://gateway.marvel.com:443/v1/public/comics';
 
-const TS = process.env.TS;
-const REACT_APP_MARVEL_PUBLIC_KEY = process.env.REACT_APP_MARVEL_PUBLIC_KEY;
-const REACT_APP_MARVEL_MD5_HASH = process.env.REACT_APP_MARVEL_MD5_HASH;
-const DATE_RANGE = process.env.DATE_RANGE;
+const ts = '1';
+const apikey = '7e994420fae9b225d26c4e9a0f45223f';
+const hash = '1d5cbf8f83e384a959f2efdb610fed3c';
+const dateRange = '2020-01-01,2023-09-01';
 
 const getComics = createAsyncThunk(
   'comics/getComics',
   async (offset: number, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
-        `${API_URL}?ts=${TS}&apikey=${REACT_APP_MARVEL_PUBLIC_KEY}&hash=${REACT_APP_MARVEL_MD5_HASH}&dateRange=${DATE_RANGE}&offset=${offset}`
+        `${COMICS_URL}?ts=${ts}&apikey=${apikey}&hash=${hash}&dateRange=${dateRange}&offset=${offset}`
       );
       return { data };
     } catch (err: any) {
@@ -32,7 +31,7 @@ const getComicDetails = createAsyncThunk(
   async (id: string, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
-        `${API_URL}/${id}?ts=${TS}&apikey=${REACT_APP_MARVEL_PUBLIC_KEY}&hash=${REACT_APP_MARVEL_MD5_HASH}`
+        `${COMICS_URL}/${id}?ts=${ts}&apikey=${apikey}&hash=${hash}`
       );
       return { data };
     } catch (err: any) {
@@ -50,7 +49,7 @@ const searchComics = createAsyncThunk(
     const { search, offset } = params;
     try {
       const { data } = await axios.get(
-        `${API_URL}?ts=${TS}&apikey=${REACT_APP_MARVEL_PUBLIC_KEY}&hash=${REACT_APP_MARVEL_MD5_HASH}&titleStartsWith=${search}&offset=${offset}`
+        `${COMICS_URL}?ts=${ts}&apikey=${apikey}&hash=${hash}&titleStartsWith=${search}&offset=${offset}`
       );
       return { data };
     } catch (err: any) {
@@ -67,7 +66,7 @@ const getAutocompleteOptions = createAsyncThunk(
   async (search: string, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
-        `${API_URL}?ts=${TS}&apikey=${REACT_APP_MARVEL_PUBLIC_KEY}&hash=${REACT_APP_MARVEL_MD5_HASH}&titleStartsWith=${search}`
+        `${COMICS_URL}?ts=${ts}&apikey=${apikey}&hash=${hash}&titleStartsWith=${search}`
       );
       return { data };
     } catch (err: any) {

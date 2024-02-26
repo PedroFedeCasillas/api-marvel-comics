@@ -26,7 +26,7 @@
   <img alt="api-marvel-comics" title="#ApiMarvelComics" src="./src/assets/images/page-img.jpeg" />
 </h1>
 
-You can see the app in production [here](https://pn2611xt-3000.brs.devtunnels.ms/)
+You can see the app in production [here](https://api-marvel-comics.netlify.app/)
 
 <h1 id="requirements">Requirements</h1>
 
